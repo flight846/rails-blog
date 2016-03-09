@@ -4,4 +4,7 @@ Rails.application.routes.draw do
   end
   
   root "posts#index"
+  
+  # No need of resources like update, delete
+  get '/about', to: 'pages#about'
 end
