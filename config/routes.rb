@@ -3,8 +3,8 @@ Rails.application.routes.draw do
     resources :comments
   end
   
-  root "posts#index"
+  root "pages#about"
   
   # No need of resources like update, delete
-  get '/about', to: 'pages#about'
+  get '/blog', to: 'posts#index'
 end
